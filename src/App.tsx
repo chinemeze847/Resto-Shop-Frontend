@@ -11,7 +11,7 @@ interface FoodItem {
   description: string;
   price: string;
   image: string;
-  more_details: string; // Add more details to the interface
+  more_details: string; 
 }
 
 const App: React.FC = () => {

@@ -38,7 +38,7 @@ Ensure you have the following installed:
 
 
 ```bash
-git clone https://github.com/your-username/restaurant-shop-frontend.git
+git clone https://github.com/chinemeze847/Resto-Shop-Frontend.git
 cd restaurant-shop-frontend
 ```
 #### Install dependencies:
@@ -69,5 +69,16 @@ The forms are centered and styled with proper titles like "Login With" or "Signu
 Styling
 The styling is managed using regular CSS files for each component. Key design decisions include:
 
-### License
+## Images
+
+### List of foods available
+![alt text](image.png)
+
+### More Detals of a food item
+![alt text](image-1.png)
+
+### Login page
+![alt text](image-2.png)
+
+## License
 This project is licensed under the MIT License.
