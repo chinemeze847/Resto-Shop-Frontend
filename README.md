@@ -1,51 +1,73 @@
-# React + TypeScript + Vite
+## Restaurant Shop - Frontend
+This project is the frontend for a restaurant shop application built using React. The application allows users to browse food items, view detailed information in a modal, and provides login/signup functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Table of Contents
+- `Features`
+- `Tech Stack`
+- `Project Structure`
+- `Setup Instructions`
+- `Available Scripts`
+- `Component Overview`
+- `Styling`
+- `Future Improvements`
+- `Contributing`
+- `License`
 
-Currently, two official plugins are available:
+### Features
+- Display food items in a card-based layout.
+- View detailed information about a food item in a modal with a blurred background.
+- Fixed navbar that remains visible while scrolling.
+- Responsive design with modals for login and signup.
+- Separate modals for login and signup with centered  positioning and green action buttons.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tech Stack
+- `React:` UI Library for building the frontend.
+- `TypeScript:` Typed JavaScript for safer and more scalable code.
+- `CSS:` Custom styles for layout and component design.
+- `Vite:` Development environment and build tool for fast performance.
 
-## Expanding the ESLint configuration
+### Setup Instructions
+#### Prerequisites
+Ensure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (v14 or later)
+- npm or yarn
+- Installation
 
-- Configure the top-level `parserOptions` property like this:
+#### Clone the repository:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+```bash
+git clone https://github.com/your-username/restaurant-shop-frontend.git
+cd restaurant-shop-frontend
+```
+#### Install dependencies:
+```bash
+npm install
+```
+### Running the Application
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Component Overview
+- `Navbar`
+The Navbar is a fixed component that allows navigation to different sections of the app.
+It includes login and signup links that trigger modals.
+- `FoodCard`
+Displays individual food items with details like image, name, price, and description.
+Clicking a food card fetches more details and displays them in a modal.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Resto-Shop-Frontend
+- `FoodItemDetails`
+A modal that shows more detailed information about a selected food item.
+The modal has a blurred background effect and green action buttons.
+
+- `Modal`
+Handles both login and signup forms, displayed conditionally based on user interaction.
+The forms are centered and styled with proper titles like "Login With" or "Signup With".
+Styling
+The styling is managed using regular CSS files for each component. Key design decisions include:
+
+### License
+This project is licensed under the MIT License.
