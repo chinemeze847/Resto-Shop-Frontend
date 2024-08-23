@@ -1,0 +1,110 @@
+/* Blurry background when modal is active */
+.blurry-background {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+/* Food cards container */
+.food-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Food item details modal */
+.food-item-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  position: relative; /* Make sure the close button is positioned relative to this container */
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  z-index: 1100; /* Ensure the close button is on top */
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px 8px;
+}
+
+.close-button:hover {
+  color: #f00;
+}
+
+/* Ensure no interaction with the background when modal is active */
+.blurry-background {
+  pointer-events: none;
+}
+
+/* Additional styles */
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* Description */
+.modal-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Price styling */
+.modal-content .price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #27ae60; /* Green color for price */
+  margin: 16px 0;
+}
+
+/* More details section */
+.modal-content .more-details {
+  font-size: 14px;
+  color: #777;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
