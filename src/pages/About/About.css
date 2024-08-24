@@ -1,0 +1,86 @@
+.about-container {
+    margin: 80px auto;
+    padding: 20px;
+    max-width: 1000px;
+    text-align: left;
+  }
+  
+  .about-intro, .about-history, .about-chefs, .about-ethos, .about-vision, .about-values, .about-testimonials, .about-contact {
+    margin-bottom: 40px;
+  }
+  
+  .about-intro h1,
+  .about-history h2,
+  .about-chefs h2,
+  .about-ethos h2,
+  .about-vision h2,
+  .about-values h2,
+  .about-testimonials h2,
+  .about-contact h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .about-intro p,
+  .about-history p,
+  .about-ethos p,
+  .about-vision p,
+  .about-contact p {
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  .chef-profiles {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .chef {
+    text-align: center;
+  }
+  
+  .chef img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .chef h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .chef p {
+    color: #777;
+    font-style: italic;
+  }
+  
+  .about-values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .about-values li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .about-values li strong {
+    color: #333;
+  }
+  
+  .about-testimonials blockquote {
+    font-style: italic;
+    color: #666;
+    border-left: 4px solid #ccc;
+    padding-left: 15px;
+    margin: 20px 0;
+  }
+  
+  .about-contact a {
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  
