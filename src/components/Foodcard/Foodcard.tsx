@@ -1,4 +1,5 @@
 import React from 'react';
+import './Foodcard.css'
 
 
 interface FoodCardProps {

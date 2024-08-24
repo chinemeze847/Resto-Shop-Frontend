@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar';
-import FoodCard from '../../components/Foodcard';
+import FoodCard from '../../components/Foodcard/Foodcard';
 import FoodItemDetails from '../../components/FoodItemDetails/FoodItemDetails';
 
 interface FoodItem {

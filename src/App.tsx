@@ -4,6 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import Menu from './pages/Menu/Menu';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer';
+import About from './pages/About/About';
+import Contact from './pages/Contact/Contact';
 
 
 const App: React.FC = () => {
