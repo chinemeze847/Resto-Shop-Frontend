@@ -10,18 +10,18 @@ import Contact from './pages/Contact/Contact';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter>
-        <>
-          <Navbar />
+    <div className='app'>
+      <Navbar />
+        <div className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <Footer />
-        </>
-    </BrowserRouter>
+        </div>
+      <Footer />
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from '../Modals/Modal';
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 
 const Navbar: React.FC = () => {
@@ -25,17 +26,23 @@ const Navbar: React.FC = () => {
     <nav className="navbar">
       <h2>Restaurant Shop</h2>
       <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/menu">Menu</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
         <li onClick={handleLoginClick}>Login</li>
         <li onClick={handleSignupClick}>Signup</li>
       </ul>
 
-      {showModal && (
-        <Modal isLogin={isLogin} closeModal={closeModal} />
-      )}
+      {showModal && <Modal isLogin={isLogin} closeModal={closeModal} />}
     </nav>
   );
 };

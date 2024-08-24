@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../components/Navbar/Navbar';
 import FoodCard from '../../components/Foodcard/Foodcard';
 import FoodItemDetails from '../../components/FoodItemDetails/FoodItemDetails';
 
@@ -33,7 +32,6 @@ interface FoodItem {
   
     return (
       <div>
-        <Navbar />
         <div className="food-cards-container">
           {foodItems.map((item) => (
             <FoodCard key={item.id} item={item} onClick={() => handleCardClick(item.id)} />
