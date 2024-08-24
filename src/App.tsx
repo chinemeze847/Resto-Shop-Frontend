@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import FoodCard from './components/Foodcard';
 import FoodItemDetails from './components/FoodItemDetails/FoodItemDetails';
 

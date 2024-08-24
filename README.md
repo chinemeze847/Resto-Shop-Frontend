@@ -77,8 +77,11 @@ The styling is managed using regular CSS files for each component. Key design de
 ### More Detals of a food item
 ![alt text](image-1.png)
 
-### Login page
+### Login Modal
 ![alt text](image-2.png)
+
+### Sign up Modal
+![alt text](image-3.png)
 
 ## License
 This project is licensed under the MIT License.
